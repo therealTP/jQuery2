@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Listo</title>
+	<head>
+		<title>Listo</title>
+		<link rel="stylesheet" type="text/css" href="app/styles/main.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
-<body>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="app/scripts/app.js"></script>
-</body>
+	<body>
+		<h1>Super Best Task Manager</h1>
+			<h3>Current Tasks</h3>
+			<table id="task-table">
+				<thead>
+					<tr>
+						<th>Task</th>
+						<th>Priority</th>
+						<th>Complete</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<div class="new-task-container">
+			<h4>Submit a new task below.</h4>
+			<form id="new-task-form" class="new-task">
+				Enter New Task:<br>
+				<input type="text" id="taskName" name="taskName" value="" placeholder="Enter new task here."><br>
+				<input type="checkbox" id="moveToTop" name="moveToTop" value=""> Move to top of list.<br>
+				<input type="submit" id="#submit-button" name="submit-button" value="Submit">
+			</form>
+		</div>
+		<script type="text/javascript" src="app/app.js"></script>
+	</body>
 </html>
