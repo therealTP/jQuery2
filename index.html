@@ -20,13 +20,15 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="new-task-container">
+		<button id="new-task-btn">Create New Task</button>
+		<div class="new-task-container hidden">
 			<h4>Submit a new task below.</h4>
 			<form id="new-task-form" class="new-task">
 				Enter New Task:<br>
 				<input type="text" id="taskName" name="taskName" value="" placeholder="Enter new task here."><br>
 				<input type="checkbox" id="moveToTop" name="moveToTop" value=""> Move to top of list.<br>
-				<input type="submit" id="#submit-button" name="submit-button" value="Submit">
+				<input type="submit" id="submit-button" name="submit-button" value="Submit">
+				<input type="button" id="cancel-new-task" name="cancel-button" value="Cancel">
 			</form>
 		</div>
 		<script type="text/javascript" src="app/app.js"></script>
