@@ -1,3 +1,22 @@
 .hidden {
   display: none;
 }
+
+body {
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+th, td {
+  padding-right: 15px;
+  min-width: 100px;
+  border: 1px solid black;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+#new-task-form input {
+  margin-top: 10px;
+}
